@@ -20,7 +20,7 @@ const db = new sqlite3.Database(
   }
 );
 
-app.get("/allDua", (req, res) => {
+app.get("/all-dua", (req, res) => {
   db.all("SELECT * FROM dua", (err, rows) => {
     if (err) {
       console.error(err);
